@@ -6,14 +6,13 @@ speaker3 = require('./cards/speaker3.jade')()
 
 sponsor1 = require('./cards/sponsor1.jade')()
 sponsor2 = require('./cards/sponsor2.jade')()
-sponsor3 = require('./cards/sponsor3.jade')()
 
 drinks = require('./cards/drinks.jade')()
-irc = require('./cards/irc.jade')()
 speakersWanted = require('./cards/speakers-wanted.jade')()
 sponsorsWanted = require('./cards/sponsors-wanted.jade')()
 # nodeschool = require('./cards/nodeschool.jade')()
 next = require('./cards/next.jade')()
+carlo = require('./cards/carlo.jade')()
 
 cardInterval = 20
 
@@ -29,6 +28,7 @@ cardsHtml = [
   speaker3
   next
   sponsorsWanted
+  carlo
 ]
 
 iCard = 0
