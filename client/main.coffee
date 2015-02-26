@@ -54,6 +54,11 @@ module.exports = ->
   container = $('<div/>')
   $('body').append(container)
 
+  logo = document.createElement 'img'
+  logo.src = '/img/logo.png'
+  logo.classList.add 'logo'
+  document.body.appendChild logo
+
   cards = cardsHtml.map (html) ->
     createCard html
 
