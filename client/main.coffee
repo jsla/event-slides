@@ -10,9 +10,12 @@ sponsor2 = require('./cards/sponsor2.jade')()
 drinks = require('./cards/drinks.jade')()
 speakersWanted = require('./cards/speakers-wanted.jade')()
 sponsorsWanted = require('./cards/sponsors-wanted.jade')()
-# nodeschool = require('./cards/nodeschool.jade')()
+
+surge = require('./cards/community/surge.jade')()
+cascadia = require('./cards/community/cascadia.jade')()
+_3dwebfest = require('./cards/community/3dwebfest.jade')()
+
 next = require('./cards/next.jade')()
-carlo = require('./cards/carlo.jade')()
 
 cardInterval = 20
 
@@ -20,15 +23,16 @@ cardsHtml = [
   speaker1
   sponsor1
   drinks
+  cascadia
 
   speaker2
   sponsor2
   speakersWanted
+  _3dwebfest
 
   speaker3
   next
   sponsorsWanted
-  carlo
 ]
 
 iCard = 0
