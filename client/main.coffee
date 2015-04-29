@@ -13,7 +13,6 @@ sponsorsWanted = require('./cards/sponsors-wanted.jade')()
 
 surge = require('./cards/community/surge.jade')()
 cascadia = require('./cards/community/cascadia.jade')()
-_3dwebfest = require('./cards/community/3dwebfest.jade')()
 
 next = require('./cards/next.jade')()
 
@@ -28,7 +27,6 @@ cardsHtml = [
   speaker2
   sponsor2
   speakersWanted
-  _3dwebfest
 
   speaker3
   next
