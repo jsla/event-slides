@@ -4,7 +4,7 @@
   "description": "",
   "main": "client/entry.coffee",
   "scripts": {
-    "dev": "beefy --cwd public client/entry.coffee"
+    "start": "beefy --cwd public client/entry.coffee"
   },
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
   "license": "MIT",
