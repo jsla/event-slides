@@ -31,6 +31,7 @@ cardsHtml = [
   speaker3
   next
   sponsorsWanted
+  surge
 ]
 
 iCard = 0
