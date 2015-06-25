@@ -7,12 +7,13 @@ speaker3 = require('./cards/speaker3.jade')()
 sponsor1 = require('./cards/sponsor1.jade')()
 sponsor2 = require('./cards/sponsor2.jade')()
 
+slack = require('./cards/slack.jade')()
+raffle = require('./cards/raffle.jade')()
 drinks = require('./cards/drinks.jade')()
 speakersWanted = require('./cards/speakers-wanted.jade')()
 sponsorsWanted = require('./cards/sponsors-wanted.jade')()
 
 surge = require('./cards/community/surge.jade')()
-cascadia = require('./cards/community/cascadia.jade')()
 friends = require('./cards/community/friends.jade')()
 
 next = require('./cards/next.jade')()
@@ -23,17 +24,18 @@ cardsHtml = [
   speaker1
   sponsor1
   drinks
-  cascadia
+  slack
 
   speaker2
   sponsor2
   speakersWanted
-  friends
+  # friends
+  raffle
 
   speaker3
   next
   sponsorsWanted
-  surge
+  # surge
 ]
 
 iCard = 0
