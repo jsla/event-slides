@@ -30,8 +30,8 @@ cardsHtml = [
   speaker2
   sponsor2
   speakersWanted
-  # nodeschool
-  # raffle
+  nodeschool
+  raffle
 
   # speaker3
   # sponsor3
