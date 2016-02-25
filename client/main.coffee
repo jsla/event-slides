@@ -3,6 +3,7 @@ $ = require('jquery')
 speaker1 = require('./cards/speaker1.jade')()
 speaker2 = require('./cards/speaker2.jade')()
 speaker3 = require('./cards/speaker3.jade')()
+speaker4 = require('./cards/speaker4.jade')()
 
 sponsor1 = require('./cards/sponsor1.jade')()
 sponsor2 = require('./cards/sponsor2.jade')()
@@ -25,19 +26,20 @@ cardsHtml = [
   speaker1
   sponsor1
   drinks
-  slack
-
   speaker2
+
+  slack
   sponsor2
   speakersWanted
+  speaker3
   nodeschool
   # raffle
 
-  # speaker3
-  # sponsor3
   next
+  speaker4
   sponsorsWanted
-  surge
+  # sponsor3
+  # surge
 ]
 
 iCard = 0
@@ -67,6 +69,11 @@ module.exports = ->
   logo.src = '/img/logo.png'
   logo.classList.add 'logo'
   document.body.appendChild logo
+
+  logo2 = document.createElement 'img'
+  logo2.src = '/img/sponsors/nodejs.png'
+  logo2.classList.add 'logo2'
+  document.body.appendChild logo2
 
   cards = cardsHtml.map (html) ->
     createCard html
