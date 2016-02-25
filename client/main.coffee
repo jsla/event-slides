@@ -31,7 +31,7 @@ cardsHtml = [
   sponsor2
   speakersWanted
   nodeschool
-  raffle
+  # raffle
 
   # speaker3
   # sponsor3
