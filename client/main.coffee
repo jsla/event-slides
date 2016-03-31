@@ -15,7 +15,7 @@ drinks = require('./cards/drinks.jade')()
 speakersWanted = require('./cards/speakers-wanted.jade')()
 sponsorsWanted = require('./cards/sponsors-wanted.jade')()
 
-surge = require('./cards/community/surge.jade')()
+surge = 
 nodeschool = require('./cards/community/nodeschool.jade')()
 
 next = require('./cards/next.jade')()
@@ -24,22 +24,28 @@ cardInterval = 20
 
 cardsHtml = [
   speaker1
-  sponsor1
   drinks
-  speaker2
 
+  sponsor1
   slack
-  sponsor2
+
+  speaker2
   speakersWanted
-  speaker3
+
+  sponsor2
   nodeschool
-  # raffle
+
+  sponsor3
+  require('./cards/community/fullstack-react.jade')()
 
   next
-  speaker4
   sponsorsWanted
-  # sponsor3
-  # surge
+  require('./cards/community/surge.jade')()
+
+  # speaker3
+  # raffle
+
+  # speaker4
 ]
 
 iCard = 0
@@ -69,11 +75,6 @@ module.exports = ->
   logo.src = '/img/logo.png'
   logo.classList.add 'logo'
   document.body.appendChild logo
-
-  logo2 = document.createElement 'img'
-  logo2.src = '/img/sponsors/nodejs.png'
-  logo2.classList.add 'logo2'
-  document.body.appendChild logo2
 
   cards = cardsHtml.map (html) ->
     createCard html
