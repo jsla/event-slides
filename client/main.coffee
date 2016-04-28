@@ -23,6 +23,7 @@ next = require('./cards/next.jade')()
 cardInterval = 20
 
 cardsHtml = [
+  require('./cards/coc.jade')()
   speaker1
   drinks
 
