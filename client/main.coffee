@@ -15,7 +15,7 @@ cardsHtml = [
 
   require('./cards/community/nodeschool.jade')()
 
-  require('./cards/sponsor3.jade')()
+  require('./cards/sponsor2.jade')()
   require('./cards/community/fullstack-react.jade')()
 
   require('./cards/next.jade')()
@@ -47,7 +47,7 @@ module.exports = ->
   $('body').append(container)
 
   logo = document.createElement 'img'
-  logo.src = '/img/logo.png'
+  logo.src = '/img/jsla_152.png'
   logo.classList.add 'logo'
   document.body.appendChild logo
 

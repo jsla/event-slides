@@ -4,7 +4,10 @@
   "description": "",
   "main": "client/entry.coffee",
   "scripts": {
-    "start": "beefy --cwd public client/entry.coffee"
+    "prestart": "(rm public/main.js; exit 0)",
+    "start": "beefy --cwd public client/entry.coffee:main.js",
+    "build": "browserify client/entry.coffee | uglifyjs -mc > public/main.js",
+    "deploy": "npm run build && surge public"
   },
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
   "license": "MIT",
@@ -23,5 +26,10 @@
       "jadeify",
       "sassify"
     ]
+  },
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "surge": "^0.17.7",
+    "uglify-js": "^2.6.2"
   }
 }
