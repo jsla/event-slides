@@ -3,6 +3,7 @@ $ = require('jquery')
 cardInterval = 20
 
 cardsHtml = [
+  require('./cards/community/jsla-rotate.jade')()
   require('./cards/coc.jade')()
   require('./cards/speaker1.jade')()
   require('./cards/drinks.jade')()
