@@ -9,11 +9,13 @@ cardsHtml = [
 
   require('./cards/sponsor1.jade')()
   require('./cards/slack.jade')()
+  require('./cards/community/nodebots.jade')()
 
   require('./cards/speaker2.jade')()
   require('./cards/speakers-wanted.jade')()
 
   require('./cards/community/nodeschool.jade')()
+  require('./cards/community/hyperterm.jade')()
 
   require('./cards/sponsor2.jade')()
   require('./cards/community/fullstack-react.jade')()
