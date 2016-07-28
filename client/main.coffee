@@ -13,8 +13,9 @@ cardsHtml = [
 
   require('./cards/speaker2.jade')()
   require('./cards/speakers-wanted.jade')()
+  require('./cards/community/youtube.jade')()
 
-  require('./cards/community/nodeschool.jade')()
+  # require('./cards/community/nodeschool.jade')()
   require('./cards/community/hyperterm.jade')()
 
   require('./cards/sponsor2.jade')()
@@ -23,6 +24,7 @@ cardsHtml = [
   require('./cards/next.jade')()
   require('./cards/sponsors-wanted.jade')()
   require('./cards/community/surge.jade')()
+  require('./cards/community/lunch.jade')()
 ]
 
 iCard = 0
