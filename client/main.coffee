@@ -16,7 +16,7 @@ cardsHtml = [
   require('./cards/community/youtube.jade')()
 
   require('./cards/community/nodeschool.jade')()
-  # require('./cards/community/hyperterm.jade')()
+  require('./cards/speaker3.jade')()
 
   require('./cards/sponsor2.jade')()
   require('./cards/community/fullstack-react.jade')()
@@ -45,6 +45,16 @@ nextCard = ->
 
   cards[iCard].fadeIn 'slow'
 
+prevCard = ->
+  return unless cards.length
+
+  cards[iCard].fadeOut 'slow'
+
+  iCard -= 1
+  iCard = 0 if iCard < 0
+
+  cards[iCard].fadeIn 'slow'
+
 
 module.exports = ->
   container = $('<div/>')
@@ -70,6 +80,7 @@ module.exports = ->
 
 document.addEventListener 'keyup', (evt) ->
   nextCard() if evt.keyIdentifier is 'Right'
+  prevCard() if evt.keyIdentifier is 'Left'
 
 h = (tag, className) ->
   el = document.createElement tag
