@@ -15,8 +15,8 @@ cardsHtml = [
   require('./cards/speakers-wanted.jade')()
   require('./cards/community/youtube.jade')()
 
-  require('./cards/community/nodeschool.jade')()
-  require('./cards/speaker3.jade')()
+  # require('./cards/community/nodeschool.jade')()
+  # require('./cards/speaker3.jade')()
 
   require('./cards/sponsor2.jade')()
   require('./cards/community/fullstack-react.jade')()
@@ -79,8 +79,9 @@ module.exports = ->
   setInterval nextCard, cardInterval * 1000
 
 document.addEventListener 'keyup', (evt) ->
-  nextCard() if evt.keyIdentifier is 'Right'
-  prevCard() if evt.keyIdentifier is 'Left'
+  console.log evt
+  nextCard() if evt.code is 'ArrowRight'
+  prevCard() if evt.code is 'ArrowLeft'
 
 h = (tag, className) ->
   el = document.createElement tag
