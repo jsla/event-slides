@@ -1,11 +1,14 @@
-$darkGreen: #005E54;
-$lightTan: #FDF3B6;
-$tan: #E0D09C;
-$darkGray: #0E1321;
-$darkBlue: #00426E;
-$blue: #397F9D;
-$orange: #F27300;
-$darkRed: #7F130D;
+:root {
+  --darkGreen: #005E54;
+  --lightTan: #FDF3B6;
+  --tan: #E0D09C;
+  --darkGray: #0E1321;
+  --darkBlue: #00426E;
+  --blue: #397F9D;
+  --orange: #F27300;
+  --darkRed: #7F130D;
+}
+
 
 @font-face {
   font-family: 'Arimo';
@@ -76,13 +79,13 @@ html {
   height: 100%;
   overflow: hidden;
   padding: 0;
-  background-color: $darkGray;
-  background: -webkit-linear-gradient(top, #0E0E0E, $darkGray);
+  background-color: var(--darkGray);
+  background: -webkit-linear-gradient(top, #0E0E0E, var(--darkGray));
 }
 
 body {
   margin: 0;
-  color: $tan;
+  color: var(--tan);
   text-align: center;
   font-family: 'Arimo', sans-serif;
   // font-weight: 700;
@@ -90,7 +93,7 @@ body {
 }
 
 h1 {
-  color: $lightTan;
+  color: var(--lightTan);
 }
 
 h1, h2, h3 {
@@ -143,20 +146,21 @@ img {
   display: box;
   box-align: center;
   box-pack: center;
+}
 
-
-  img.speaker {
-    width: 33%;
-  }
+.card
+img.speaker {
+  width: 33%;
 }
 
 .iframe {
   width: 90%;
   height: 90%;
+}
 
-  iframe{
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
+.iframe
+iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
 }
