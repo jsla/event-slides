@@ -15,7 +15,7 @@ cardsHtml = [
   require('./cards/speakers-wanted.jade')()
   require('./cards/community/youtube.jade')()
 
-  # require('./cards/community/nodeschool.jade')()
+  require('./cards/community/scale.jade')()
   # require('./cards/speaker3.jade')()
 
   require('./cards/sponsor2.jade')()
